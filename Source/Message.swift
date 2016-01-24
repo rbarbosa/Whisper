@@ -49,20 +49,20 @@ public struct Murmur {
   }
 }
 
-public struct Echo {
+
+public struct Secret {
   
   public var title: String
   public var duration: NSTimeInterval
+  public var textColor: UIColor
   public var backgroundColor: UIColor
-  public var titleColor: UIColor
-  public var font: UIFont
   
-  public init(title: String, duration: NSTimeInterval = 1.5, backgroundColor: UIColor = ColorList.Whistle.background,
-    titleColor: UIColor = ColorList.Whistle.title, font: UIFont = FontList.Whistle.title) {
-      self.title = title
-      self.duration = duration
-      self.backgroundColor = backgroundColor
-      self.titleColor = titleColor
-      self.font = font
+  
+  public init(title: String, duration: NSTimeInterval = 2.0, textColor: UIColor = ColorList.Disclosure.title, backgroundColor: UIColor = ColorList.Disclosure.background) {
+    
+    self.title = title
+    self.duration = duration
+    self.textColor = textColor
+    self.backgroundColor = backgroundColor
   }
 }
